@@ -1,0 +1,62 @@
+[
+  {
+    "Country_Code": 1,
+    "Country": "India"
+  },
+  {
+    "Country_Code": 14,
+    "Country": "Australia"
+  },
+  {
+    "Country_Code": 30,
+    "Country": "Brazil"
+  },
+  {
+    "Country_Code": 37,
+    "Country": "Canada"
+  },
+  {
+    "Country_Code": 94,
+    "Country": "Indonesia"
+  },
+  {
+    "Country_Code": 148,
+    "Country": "New Zealand"
+  },
+  {
+    "Country_Code": 162,
+    "Country": "Phillipines"
+  },
+  {
+    "Country_Code": 166,
+    "Country": "Qatar"
+  },
+  {
+    "Country_Code": 184,
+    "Country": "Singapore"
+  },
+  {
+    "Country_Code": 189,
+    "Country": "South Africa"
+  },
+  {
+    "Country_Code": 191,
+    "Country": "Sri Lanka"
+  },
+  {
+    "Country_Code": 208,
+    "Country": "Turkey"
+  },
+  {
+    "Country_Code": 214,
+    "Country": "UAE"
+  },
+  {
+    "Country_Code": 215,
+    "Country": "United Kingdom"
+  },
+  {
+    "Country_Code": 216,
+    "Country": "United States"
+  }
+]
