@@ -9,6 +9,7 @@ import BottomNavigation from "./BottomNavigation";
 import RestaurantDetailsPage from "../RestaurantDetailsPage";
 import PaymentProfile from "../PaymentProfile";
 import TrackOrder from "../TrackOrder";
+import Cart from "../Cart";
 
 const Stack = createNativeStackNavigator();
 
@@ -54,6 +55,11 @@ export default function AuthNavigation() {
         name="TrackOrder"
         component={TrackOrder}
         options={{ title: "Track Order Details" }}
+      />
+      <Stack.Screen
+        name="Cart"
+        component={Cart}
+        options={{ title: "Cart Details" }}
       />
     </Stack.Navigator>
   );

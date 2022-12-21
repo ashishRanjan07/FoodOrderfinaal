@@ -71,7 +71,6 @@ export default function Cart({ route }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cart </Text>
       <View style={styles.cardContainer}>
         <View style={styles.infoStyle}>
           <View style={{ height: "auto", margin: 15, padding: 15 }}>

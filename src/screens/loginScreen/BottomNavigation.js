@@ -22,7 +22,7 @@ export default function BottomNavigation() {
         }}
       />
 
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Cart"
         component={Cart}
         options={{
@@ -30,7 +30,7 @@ export default function BottomNavigation() {
             <AntDesign name="shoppingcart" size={24} color="black" />
           ),
         }}
-      />
+      /> */}
       {/* <Tab.Screen
         name="TrackOrder"
         component={TrackOrder}
