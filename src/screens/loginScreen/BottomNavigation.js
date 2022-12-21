@@ -12,7 +12,7 @@ const Tab = createMaterialBottomTabNavigator();
 
 export default function BottomNavigation() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName="HomeScreen">
       <Tab.Screen
         name="Home"
         component={HomeScreen}

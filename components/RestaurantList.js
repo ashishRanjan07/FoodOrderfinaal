@@ -58,7 +58,11 @@ export default function RestaurantList({ restaurants }) {
   };
   return (
     <View>
-      <FlatList data={restaurants} renderItem={renderList} />
+      <FlatList
+        data={restaurants}
+        renderItem={renderList}
+        removeClippedSubviews
+      />
     </View>
   );
 }

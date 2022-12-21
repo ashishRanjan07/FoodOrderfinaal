@@ -18,7 +18,7 @@ export default function Cart({ route }) {
   const menuItem = item.Cuisines.split(", ");
   console.log(item);
 
-  // let options = {
+  //  let options = {
   //   description: "Payment for Foods",
   //   image: "https://i.imgur.com/3g7nmJC.png",
   //   currency: "INR",
@@ -119,7 +119,7 @@ export default function Cart({ route }) {
 
       <TouchableOpacity
         style={{ alignItems: "center", backgroundColor: "#6666FF" }}
-        onPress={() => navigation.navigate("PaymentProfile")}
+        onPress={() => navigation.navigate("PaymentProfile", { count })}
       >
         <Text style={styles.textStyle}>
           Proceed To Pay {count} X {item.Average_Cost_for_two}=

@@ -6,9 +6,7 @@ import {
   StyleSheet,
   Dimensions,
   Image,
-  Button,
   TouchableOpacity,
-  ScrollView,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
