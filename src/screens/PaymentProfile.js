@@ -72,7 +72,6 @@ export default function PaymentProfile({ route }) {
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Home");
               Alert.alert("Oder Confirmation", "Order successful", [
                 {
                   text: "Track Order",

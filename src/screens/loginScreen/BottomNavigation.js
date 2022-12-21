@@ -31,7 +31,7 @@ export default function BottomNavigation() {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="TrackOrder"
         component={TrackOrder}
         options={{
@@ -39,7 +39,7 @@ export default function BottomNavigation() {
             <MaterialIcons name="history" size={24} color="black" />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Profile"
         component={Profile}

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, Button, TouchableOpacity, StyleSheet } from "react-native";
-
+import { useNavigation } from "@react-navigation/native";
 export default function TrackOrder() {
+  const navigation = useNavigation();
   const [prepared, setPrepared] = useState(false);
   const [orderReady, setOrderReady] = useState(false);
   const [delivered, setDelivered] = useState(false);
@@ -56,6 +57,12 @@ export default function TrackOrder() {
           Your ordered is delivered Thank you !!!{" "}
         </Text>
       )}
+      <TouchableOpacity
+        style={Styles.button}
+        onPress={() => navigation.navigate("BottomNavigator")}
+      >
+        <Text style={Styles.buttonTextStyle}>Home</Text>
+      </TouchableOpacity>
     </View>
   );
 }
