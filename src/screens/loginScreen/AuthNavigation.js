@@ -7,6 +7,7 @@ import LoginScreen from "./LoginScreen";
 import HomeScreen from "../HomeScreen/HomeScreen";
 import BottomNavigation from "./BottomNavigation";
 import RestaurantDetailsPage from "../RestaurantDetailsPage";
+import PaymentProfile from "../PaymentProfile";
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +43,11 @@ export default function AuthNavigation() {
         name="RestaurantDetailsPage"
         component={RestaurantDetailsPage}
         options={{ title: "Restaurant Details" }}
+      />
+      <Stack.Screen
+        name="PaymentProfile"
+        component={PaymentProfile}
+        options={{ title: "Payment" }}
       />
     </Stack.Navigator>
   );

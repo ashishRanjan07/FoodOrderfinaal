@@ -7,23 +7,27 @@ import { firebase } from "../../firebase";
 export default function Profile() {
   const [users, setUsers] = useState([]);
   const dataRef = firebase.firestore().collection("name");
-  useEffect(async () => {
-    dataRef.onSnapshot((querySnapshot) => {
-      const users = [];
-      querySnapshot.forEach((doc) => {
-        const { Address, Email, Name, Password, Phone1 } = doc.data();
-        users.push({
-          id: doc.id,
-          Address,
-          Email,
-          Name,
-          Password,
-          Phone1,
+  useEffect(() => {
+    async function check() {
+      dataRef.onSnapshot((querySnapshot) => {
+        const users = [];
+        querySnapshot.forEach((doc) => {
+          const { Address, Email, Name, Password, Phone1 } = doc.data();
+          users.push({
+            id: doc.id,
+            Address,
+            Email,
+            Name,
+            Password,
+            Phone1,
+          });
         });
+        setUsers(users);
       });
-      setUsers(users);
-    });
+    }
+    check();
   }, []);
+
   return (
     <View style={{ flex: 1 }}>
       <Text style={{ margin: 15, fontSize: 20, fontWeight: "bold" }}>

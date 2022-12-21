@@ -6024,6 +6024,11 @@ react-native-paper@^5.1.0:
     color "^3.1.2"
     use-event-callback "^0.1.0"
 
+react-native-razorpay@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-razorpay/-/react-native-razorpay-2.3.0.tgz#e89f3c635e439bc85e4c7972eb2d67e2c0e0abc3"
+  integrity sha512-xxiZCPuZmiRq5UHDr+D4OoyxEjMu0ujC+RaE+rYo938EK0Vc21dZRUVxMVP1L2WgzA8PYwmD5FWvdHNtWLQC4Q==
+
 react-native-safe-area-context@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.4.1.tgz#239c60b8a9a80eac70a38a822b04c0f1d15ffc01"
