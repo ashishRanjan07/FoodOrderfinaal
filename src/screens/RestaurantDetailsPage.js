@@ -81,7 +81,13 @@ export default function RestaurantDetailsPage({ route }) {
               size={24}
               color="black"
               style={{ marginVertical: 20 }}
-              onPress={() => setCount(count - 1)}
+              onPress={() => {
+                if (count == 0) {
+                  setCount(0);
+                } else {
+                  setCount(count - 1);
+                }
+              }}
             />
           </View>
         )}

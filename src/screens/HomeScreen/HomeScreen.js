@@ -31,7 +31,6 @@ export default function HomeScreen() {
   const searchRestaurants = () => {
     CountryCode.map((itemCountryCode) => {
       if (searchText.toLowerCase() == itemCountryCode.Country.toLowerCase()) {
-        console.log(1);
         setRestaurants((pastRestaurants) => {
           return pastRestaurants.filter(
             (item) => item.Country_Code == itemCountryCode.Country_Code

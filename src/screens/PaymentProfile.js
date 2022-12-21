@@ -14,6 +14,7 @@ import { useNavigation } from "@react-navigation/native";
 // import * as Notifications from "expo-notifications";
 export default function PaymentProfile({ route }) {
   const navigation = useNavigation();
+
   //   const getPermission = () => {
   //     if(Constants.isDevice){
   //         const {status:existingStaus} = await Notifications.getPermissionsAsync();
@@ -74,9 +75,9 @@ export default function PaymentProfile({ route }) {
               navigation.navigate("Home");
               Alert.alert("Oder Confirmation", "Order successful", [
                 {
-                  text: "View Order History",
+                  text: "Track Order",
                   onPress: () => {
-                    navigation.navigate("OrderHistory");
+                    navigation.navigate("TrackOrder");
                   },
                 },
               ]);

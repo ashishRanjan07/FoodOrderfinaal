@@ -7,8 +7,9 @@ import {
   TouchableOpacity,
   Alert,
   Dimensions,
+  Button,
 } from "react-native";
-import RezorpayCheckout from "react-native-razorpay";
+import RazorpayCheckout from "react-native-razorpay";
 import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
 export default function Cart({ route }) {
@@ -16,9 +17,9 @@ export default function Cart({ route }) {
   const [count, setCount] = useState(0);
   const { item } = route.params;
   const menuItem = item.Cuisines.split(", ");
-  console.log(item);
+  // console.log(item);
 
-  //  let options = {
+  // let options = {
   //   description: "Payment for Foods",
   //   image: "https://i.imgur.com/3g7nmJC.png",
   //   currency: "INR",
@@ -42,6 +43,31 @@ export default function Cart({ route }) {
   //       Alert.alert(`Error: ${error.code} | ${error.description}`);
   //     });
   // };
+  const Checkout = () => {
+    var options = {
+      description: "Order bill",
+      image: "",
+      currency: "INR",
+      key: "rzp_test_ihyN942As43mJi",
+      amount: "200",
+      name: "Foodorder",
+      prefill: {
+        email: "atulkumar987613@gmail.com",
+        contact: "6205695667",
+        name: "Atul Kumar",
+      },
+
+      theme: { color: "#53a20e" },
+    };
+
+    RazorpayCheckout.open(options)
+      .then((data) => {
+        console.log("Success:", data.razorpay_payment_id);
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      });
+  };
 
   return (
     <View style={styles.container}>

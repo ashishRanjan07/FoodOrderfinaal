@@ -7,6 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import Cart from "../Cart";
 import OrderHistory from "../OrderHistory";
+import TrackOrder from "../TrackOrder";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -31,8 +32,8 @@ export default function BottomNavigation() {
         }}
       />
       <Tab.Screen
-        name="OrderHistory"
-        component={OrderHistory}
+        name="TrackOrder"
+        component={TrackOrder}
         options={{
           tabBarIcon: () => (
             <MaterialIcons name="history" size={24} color="black" />
