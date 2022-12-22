@@ -16,9 +16,6 @@ import style, { colors } from "../../globals/style";
 
 import zomato from "../../../Data/zomato.json";
 import RestaurantList from "../../../components/RestaurantList";
-import UserProfileData from "../UserProfileData";
-import { async } from "@firebase/util";
-import ModelView from "../../../components/ModelView";
 import RestaurantsData from "../../../Data/zomato.json";
 import CountryCode from "../../../Data/CountryCode.json";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";

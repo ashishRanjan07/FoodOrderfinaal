@@ -13,7 +13,7 @@ export default function ModelView() {
     const citiesCol = collection(db, "name");
     const citySnapshot = await getDocs(citiesCol);
     setcityList = citySnapshot.docs.map((doc) => doc.data());
-    console.log(cityList);
+    // console.log(cityList);
   };
   return (
     <View>
