@@ -59,7 +59,7 @@ export default function TrackOrder() {
       )}
       <TouchableOpacity
         style={Styles.button}
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => navigation.navigate("BottomNavigator")}
       >
         <Text style={Styles.buttonTextStyle}>Home</Text>
       </TouchableOpacity>
