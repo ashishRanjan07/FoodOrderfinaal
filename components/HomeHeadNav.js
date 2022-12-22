@@ -15,7 +15,6 @@ export default function HomeHeadNav() {
     signOut(authentication)
       .then((re) => {
         setIsSignedIn(false);
-        console.log("Ashish Ranjan LogOut");
         navigation.navigate("Welcome");
       })
       .catch((err) => {

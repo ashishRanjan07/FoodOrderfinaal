@@ -49,17 +49,17 @@ export default function TrackOrder() {
       )}
       {orderReady && (
         <Text style={Styles.renderDetails}>
-          Food is Ready for Deliver waiting for Delivery agent...{" "}
+          Food is Ready to be delivered waiting for Delivery agent...
         </Text>
       )}
       {delivered && (
         <Text style={Styles.renderDetails}>
-          Your ordered is delivered Thank you !!!{" "}
+          Your ordered is delivered Thank you !!!
         </Text>
       )}
       <TouchableOpacity
         style={Styles.button}
-        onPress={() => navigation.navigate("BottomNavigator")}
+        onPress={() => navigation.navigate("Home")}
       >
         <Text style={Styles.buttonTextStyle}>Home</Text>
       </TouchableOpacity>
@@ -78,7 +78,7 @@ const Styles = StyleSheet.create({
   },
   button: {
     padding: 12,
-    backgroundColor: "#D7EAFF",
+    backgroundColor: "#9d95cd",
     borderRadius: 20,
   },
   buttonTextStyle: { fontSize: 20, fontWeight: "bold" },

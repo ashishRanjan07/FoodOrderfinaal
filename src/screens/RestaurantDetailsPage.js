@@ -94,7 +94,7 @@ export default function RestaurantDetailsPage({ route }) {
       />
 
       <TouchableOpacity
-        style={{ alignItems: "center", backgroundColor: "#6666FF" }}
+        style={{ alignItems: "center", backgroundColor: "#9d95cd" }}
         onPress={() => navigation.navigate("Cart", { item, count })}
       >
         <Text style={styles.textStyle}>Add To Cart</Text>

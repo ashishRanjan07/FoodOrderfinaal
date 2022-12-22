@@ -143,7 +143,7 @@ export default function Cart({ route }) {
       />
 
       <TouchableOpacity
-        style={{ alignItems: "center", backgroundColor: "#6666FF" }}
+        style={{ alignItems: "center", backgroundColor: "#9d95cd" }}
         onPress={() => navigation.navigate("PaymentProfile", { count })}
       >
         <Text style={styles.textStyle}>

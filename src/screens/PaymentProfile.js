@@ -72,7 +72,7 @@ export default function PaymentProfile({ route }) {
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => {
-              Alert.alert("Oder Confirmation", "Order successful", [
+              Alert.alert("Oder Confirmation", "Order successful👏👏👏", [
                 {
                   text: "Track Order",
                   onPress: () => {
@@ -108,7 +108,7 @@ const Styles = StyleSheet.create({
     fontWeight: "bold",
   },
   item: {
-    backgroundColor: "#f9c2ff",
+    backgroundColor: "#9d95cd",
     padding: 12,
     borderRadius: 20,
     marginVertical: 8,
