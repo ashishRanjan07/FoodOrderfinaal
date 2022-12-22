@@ -83,7 +83,7 @@ export default function Cart({ route }) {
           <View
             style={{
               display: "flex",
-              // alignItems: "center",
+
               marginHorizontal: 10,
             }}
           >
