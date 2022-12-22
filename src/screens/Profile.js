@@ -40,8 +40,8 @@ export default function Profile() {
           <Pressable style={Styles.conatiner}>
             <View style={Styles.innerContainer}>
               <Text style={Styles.itemHeading}>Name:{item.Name}</Text>
-              <Text style={Styles.itemHeading}>Email Id{item.Email}</Text>
-              <Text style={Styles.itemHeading}>Address {item.Address}</Text>
+              <Text style={Styles.itemHeading}>Email Id:{item.Email}</Text>
+              <Text style={Styles.itemHeading}>Address: {item.Address}</Text>
               <Text style={Styles.itemHeading}>
                 Phone Number :{item.Phone1}
               </Text>

@@ -15,12 +15,12 @@ export default function TrackOrder() {
       setOrderReady(true);
       setPrepared(false);
       setDelivered(false);
-    }, 300000);
+    }, 3000);
     setTimeout(() => {
       setDelivered(true);
       setPrepared(false);
       setOrderReady(false);
-    }, 600000);
+    }, 6000);
   };
   //useEffect(() => {
   // setPrepared(true);

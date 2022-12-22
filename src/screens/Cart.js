@@ -5,9 +5,7 @@ import {
   StyleSheet,
   FlatList,
   TouchableOpacity,
-  Alert,
   Dimensions,
-  Button,
 } from "react-native";
 import RazorpayCheckout from "react-native-razorpay";
 import { useNavigation } from "@react-navigation/native";
